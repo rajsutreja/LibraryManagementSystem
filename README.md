@@ -70,10 +70,11 @@ LibraryManagementSysterm/
 1. Open SSMS.
 2. Connect to SQL Server.
 3. Open Database/Library.sql.
-4. Press F5 (Execute).
-5. Database and tables are created automatically.
-6. Run your C# application.
+4. Admin manually add database.
+5. Press F5 (Execute).
+6. Database and tables are created automatically.
+7. Run your C# application.
 
 ## NOTE :
-  -Set you Api_key and Connection_String in App.Config file 
-  -If run application and quality are low show then you go to bin/debug your .exe application properties and change High DPI setting
+  -Set you Api_key and Connection_String in App.Config file.
+  -If run application and quality are low show then you go to bin/debug your .exe application properties and change High DPI setting.
