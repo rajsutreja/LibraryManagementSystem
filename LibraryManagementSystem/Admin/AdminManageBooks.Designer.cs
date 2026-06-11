@@ -43,8 +43,8 @@
             this.b_category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.b_qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.booksBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.libraryDataSet = new LibraryManagementSysterm.LibraryDataSet();
-            this.booksTableAdapter = new LibraryManagementSysterm.LibraryDataSetTableAdapters.BooksTableAdapter();
+            this.libraryDataSet = new LibraryManagementSysterm.Data.LibraryDataSet();
+            this.booksTableAdapter = new LibraryManagementSysterm.Data.LibraryDataSetTableAdapters.BooksTableAdapter();
             this.previous = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -248,9 +248,9 @@
         private System.Windows.Forms.Button previous;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private LibraryDataSet libraryDataSet;
+        private Data.LibraryDataSet libraryDataSet;
         private System.Windows.Forms.BindingSource booksBindingSource;
-        private LibraryDataSetTableAdapters.BooksTableAdapter booksTableAdapter;
+        private Data.LibraryDataSetTableAdapters.BooksTableAdapter booksTableAdapter;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridViewButtonColumn Delete;
         private System.Windows.Forms.DataGridViewButtonColumn Update;

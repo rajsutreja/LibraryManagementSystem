@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace LibraryManagementSysterm {
+namespace LibraryManagementSysterm.Data {
     
     
     /// <summary>
@@ -20,17 +20,17 @@ namespace LibraryManagementSysterm {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("LibraryDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("LibraryDataSet8")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class LibraryDataSet : global::System.Data.DataSet {
+    public partial class LibraryDataSet8 : global::System.Data.DataSet {
         
-        private BooksDataTable tableBooks;
+        private Book_IssuesDataTable tableBook_Issues;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        public LibraryDataSet() {
+        public LibraryDataSet8() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace LibraryManagementSysterm {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        protected LibraryDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected LibraryDataSet8(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace LibraryManagementSysterm {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Books"] != null)) {
-                    base.Tables.Add(new BooksDataTable(ds.Tables["Books"]));
+                if ((ds.Tables["Book_Issues"] != null)) {
+                    base.Tables.Add(new Book_IssuesDataTable(ds.Tables["Book_Issues"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace LibraryManagementSysterm {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public BooksDataTable Books {
+        public Book_IssuesDataTable Book_Issues {
             get {
-                return this.tableBooks;
+                return this.tableBook_Issues;
             }
         }
         
@@ -127,7 +127,7 @@ namespace LibraryManagementSysterm {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            LibraryDataSet cln = ((LibraryDataSet)(base.Clone()));
+            LibraryDataSet8 cln = ((LibraryDataSet8)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace LibraryManagementSysterm {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Books"] != null)) {
-                    base.Tables.Add(new BooksDataTable(ds.Tables["Books"]));
+                if ((ds.Tables["Book_Issues"] != null)) {
+                    base.Tables.Add(new Book_IssuesDataTable(ds.Tables["Book_Issues"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace LibraryManagementSysterm {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableBooks = ((BooksDataTable)(base.Tables["Books"]));
+            this.tableBook_Issues = ((Book_IssuesDataTable)(base.Tables["Book_Issues"]));
             if ((initTable == true)) {
-                if ((this.tableBooks != null)) {
-                    this.tableBooks.InitVars();
+                if ((this.tableBook_Issues != null)) {
+                    this.tableBook_Issues.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace LibraryManagementSysterm {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "LibraryDataSet";
+            this.DataSetName = "LibraryDataSet8";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/LibraryDataSet.xsd";
+            this.Namespace = "http://tempuri.org/LibraryDataSet8.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableBooks = new BooksDataTable();
-            base.Tables.Add(this.tableBooks);
+            this.tableBook_Issues = new Book_IssuesDataTable();
+            base.Tables.Add(this.tableBook_Issues);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        private bool ShouldSerializeBooks() {
+        private bool ShouldSerializeBook_Issues() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace LibraryManagementSysterm {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            LibraryDataSet ds = new LibraryDataSet();
+            LibraryDataSet8 ds = new LibraryDataSet8();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,31 +270,31 @@ namespace LibraryManagementSysterm {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        public delegate void BooksRowChangeEventHandler(object sender, BooksRowChangeEvent e);
+        public delegate void Book_IssuesRowChangeEventHandler(object sender, Book_IssuesRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class BooksDataTable : global::System.Data.TypedTableBase<BooksRow> {
+        public partial class Book_IssuesDataTable : global::System.Data.TypedTableBase<Book_IssuesRow> {
             
-            private global::System.Data.DataColumn columnb_id;
+            private global::System.Data.DataColumn columnissue_id;
             
-            private global::System.Data.DataColumn columnb_title;
+            private global::System.Data.DataColumn columnstudent_id;
             
-            private global::System.Data.DataColumn columnb_author;
+            private global::System.Data.DataColumn columnbook_id;
             
-            private global::System.Data.DataColumn columnb_isbn;
+            private global::System.Data.DataColumn columnissue_date;
             
-            private global::System.Data.DataColumn columnb_category;
+            private global::System.Data.DataColumn columnreturn_date;
             
-            private global::System.Data.DataColumn columnb_qty;
+            private global::System.Data.DataColumn columndue_date;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public BooksDataTable() {
-                this.TableName = "Books";
+            public Book_IssuesDataTable() {
+                this.TableName = "Book_Issues";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -302,7 +302,7 @@ namespace LibraryManagementSysterm {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            internal BooksDataTable(global::System.Data.DataTable table) {
+            internal Book_IssuesDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -319,56 +319,56 @@ namespace LibraryManagementSysterm {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            protected BooksDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Book_IssuesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public global::System.Data.DataColumn b_idColumn {
+            public global::System.Data.DataColumn issue_idColumn {
                 get {
-                    return this.columnb_id;
+                    return this.columnissue_id;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public global::System.Data.DataColumn b_titleColumn {
+            public global::System.Data.DataColumn student_idColumn {
                 get {
-                    return this.columnb_title;
+                    return this.columnstudent_id;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public global::System.Data.DataColumn b_authorColumn {
+            public global::System.Data.DataColumn book_idColumn {
                 get {
-                    return this.columnb_author;
+                    return this.columnbook_id;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public global::System.Data.DataColumn b_isbnColumn {
+            public global::System.Data.DataColumn issue_dateColumn {
                 get {
-                    return this.columnb_isbn;
+                    return this.columnissue_date;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public global::System.Data.DataColumn b_categoryColumn {
+            public global::System.Data.DataColumn return_dateColumn {
                 get {
-                    return this.columnb_category;
+                    return this.columnreturn_date;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public global::System.Data.DataColumn b_qtyColumn {
+            public global::System.Data.DataColumn due_dateColumn {
                 get {
-                    return this.columnb_qty;
+                    return this.columndue_date;
                 }
             }
             
@@ -383,57 +383,57 @@ namespace LibraryManagementSysterm {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public BooksRow this[int index] {
+            public Book_IssuesRow this[int index] {
                 get {
-                    return ((BooksRow)(this.Rows[index]));
+                    return ((Book_IssuesRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public event BooksRowChangeEventHandler BooksRowChanging;
+            public event Book_IssuesRowChangeEventHandler Book_IssuesRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public event BooksRowChangeEventHandler BooksRowChanged;
+            public event Book_IssuesRowChangeEventHandler Book_IssuesRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public event BooksRowChangeEventHandler BooksRowDeleting;
+            public event Book_IssuesRowChangeEventHandler Book_IssuesRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public event BooksRowChangeEventHandler BooksRowDeleted;
+            public event Book_IssuesRowChangeEventHandler Book_IssuesRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public void AddBooksRow(BooksRow row) {
+            public void AddBook_IssuesRow(Book_IssuesRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public BooksRow AddBooksRow(string b_title, string b_author, string b_isbn, string b_category, int b_qty) {
-                BooksRow rowBooksRow = ((BooksRow)(this.NewRow()));
+            public Book_IssuesRow AddBook_IssuesRow(int student_id, int book_id, System.DateTime issue_date, System.DateTime return_date, System.DateTime due_date) {
+                Book_IssuesRow rowBook_IssuesRow = ((Book_IssuesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        b_title,
-                        b_author,
-                        b_isbn,
-                        b_category,
-                        b_qty};
-                rowBooksRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowBooksRow);
-                return rowBooksRow;
+                        student_id,
+                        book_id,
+                        issue_date,
+                        return_date,
+                        due_date};
+                rowBook_IssuesRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowBook_IssuesRow);
+                return rowBook_IssuesRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public BooksRow FindByb_id(int b_id) {
-                return ((BooksRow)(this.Rows.Find(new object[] {
-                            b_id})));
+            public Book_IssuesRow FindByissue_id(int issue_id) {
+                return ((Book_IssuesRow)(this.Rows.Find(new object[] {
+                            issue_id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                BooksDataTable cln = ((BooksDataTable)(base.Clone()));
+                Book_IssuesDataTable cln = ((Book_IssuesDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -441,73 +441,69 @@ namespace LibraryManagementSysterm {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new BooksDataTable();
+                return new Book_IssuesDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             internal void InitVars() {
-                this.columnb_id = base.Columns["b_id"];
-                this.columnb_title = base.Columns["b_title"];
-                this.columnb_author = base.Columns["b_author"];
-                this.columnb_isbn = base.Columns["b_isbn"];
-                this.columnb_category = base.Columns["b_category"];
-                this.columnb_qty = base.Columns["b_qty"];
+                this.columnissue_id = base.Columns["issue_id"];
+                this.columnstudent_id = base.Columns["student_id"];
+                this.columnbook_id = base.Columns["book_id"];
+                this.columnissue_date = base.Columns["issue_date"];
+                this.columnreturn_date = base.Columns["return_date"];
+                this.columndue_date = base.Columns["due_date"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             private void InitClass() {
-                this.columnb_id = new global::System.Data.DataColumn("b_id", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnb_id);
-                this.columnb_title = new global::System.Data.DataColumn("b_title", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnb_title);
-                this.columnb_author = new global::System.Data.DataColumn("b_author", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnb_author);
-                this.columnb_isbn = new global::System.Data.DataColumn("b_isbn", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnb_isbn);
-                this.columnb_category = new global::System.Data.DataColumn("b_category", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnb_category);
-                this.columnb_qty = new global::System.Data.DataColumn("b_qty", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnb_qty);
+                this.columnissue_id = new global::System.Data.DataColumn("issue_id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnissue_id);
+                this.columnstudent_id = new global::System.Data.DataColumn("student_id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnstudent_id);
+                this.columnbook_id = new global::System.Data.DataColumn("book_id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnbook_id);
+                this.columnissue_date = new global::System.Data.DataColumn("issue_date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnissue_date);
+                this.columnreturn_date = new global::System.Data.DataColumn("return_date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnreturn_date);
+                this.columndue_date = new global::System.Data.DataColumn("due_date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndue_date);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnb_id}, true));
-                this.columnb_id.AutoIncrement = true;
-                this.columnb_id.AutoIncrementSeed = -1;
-                this.columnb_id.AutoIncrementStep = -1;
-                this.columnb_id.AllowDBNull = false;
-                this.columnb_id.ReadOnly = true;
-                this.columnb_id.Unique = true;
-                this.columnb_title.MaxLength = 200;
-                this.columnb_author.MaxLength = 150;
-                this.columnb_isbn.MaxLength = 20;
-                this.columnb_category.MaxLength = 100;
+                                this.columnissue_id}, true));
+                this.columnissue_id.AutoIncrement = true;
+                this.columnissue_id.AutoIncrementSeed = -1;
+                this.columnissue_id.AutoIncrementStep = -1;
+                this.columnissue_id.AllowDBNull = false;
+                this.columnissue_id.ReadOnly = true;
+                this.columnissue_id.Unique = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public BooksRow NewBooksRow() {
-                return ((BooksRow)(this.NewRow()));
+            public Book_IssuesRow NewBook_IssuesRow() {
+                return ((Book_IssuesRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new BooksRow(builder);
+                return new Book_IssuesRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(BooksRow);
+                return typeof(Book_IssuesRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.BooksRowChanged != null)) {
-                    this.BooksRowChanged(this, new BooksRowChangeEvent(((BooksRow)(e.Row)), e.Action));
+                if ((this.Book_IssuesRowChanged != null)) {
+                    this.Book_IssuesRowChanged(this, new Book_IssuesRowChangeEvent(((Book_IssuesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -515,8 +511,8 @@ namespace LibraryManagementSysterm {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.BooksRowChanging != null)) {
-                    this.BooksRowChanging(this, new BooksRowChangeEvent(((BooksRow)(e.Row)), e.Action));
+                if ((this.Book_IssuesRowChanging != null)) {
+                    this.Book_IssuesRowChanging(this, new Book_IssuesRowChangeEvent(((Book_IssuesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -524,8 +520,8 @@ namespace LibraryManagementSysterm {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.BooksRowDeleted != null)) {
-                    this.BooksRowDeleted(this, new BooksRowChangeEvent(((BooksRow)(e.Row)), e.Action));
+                if ((this.Book_IssuesRowDeleted != null)) {
+                    this.Book_IssuesRowDeleted(this, new Book_IssuesRowChangeEvent(((Book_IssuesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -533,14 +529,14 @@ namespace LibraryManagementSysterm {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.BooksRowDeleting != null)) {
-                    this.BooksRowDeleting(this, new BooksRowChangeEvent(((BooksRow)(e.Row)), e.Action));
+                if ((this.Book_IssuesRowDeleting != null)) {
+                    this.Book_IssuesRowDeleting(this, new Book_IssuesRowChangeEvent(((Book_IssuesRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public void RemoveBooksRow(BooksRow row) {
+            public void RemoveBook_IssuesRow(Book_IssuesRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -549,7 +545,7 @@ namespace LibraryManagementSysterm {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                LibraryDataSet ds = new LibraryDataSet();
+                LibraryDataSet8 ds = new LibraryDataSet8();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -567,7 +563,7 @@ namespace LibraryManagementSysterm {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "BooksDataTable";
+                attribute2.FixedValue = "Book_IssuesDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -611,166 +607,166 @@ namespace LibraryManagementSysterm {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class BooksRow : global::System.Data.DataRow {
+        public partial class Book_IssuesRow : global::System.Data.DataRow {
             
-            private BooksDataTable tableBooks;
+            private Book_IssuesDataTable tableBook_Issues;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            internal BooksRow(global::System.Data.DataRowBuilder rb) : 
+            internal Book_IssuesRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableBooks = ((BooksDataTable)(this.Table));
+                this.tableBook_Issues = ((Book_IssuesDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public int b_id {
+            public int issue_id {
                 get {
-                    return ((int)(this[this.tableBooks.b_idColumn]));
+                    return ((int)(this[this.tableBook_Issues.issue_idColumn]));
                 }
                 set {
-                    this[this.tableBooks.b_idColumn] = value;
+                    this[this.tableBook_Issues.issue_idColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public string b_title {
-                get {
-                    try {
-                        return ((string)(this[this.tableBooks.b_titleColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'b_title\' in table \'Books\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableBooks.b_titleColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public string b_author {
+            public int student_id {
                 get {
                     try {
-                        return ((string)(this[this.tableBooks.b_authorColumn]));
+                        return ((int)(this[this.tableBook_Issues.student_idColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'b_author\' in table \'Books\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'student_id\' in table \'Book_Issues\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableBooks.b_authorColumn] = value;
+                    this[this.tableBook_Issues.student_idColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public string b_isbn {
+            public int book_id {
                 get {
                     try {
-                        return ((string)(this[this.tableBooks.b_isbnColumn]));
+                        return ((int)(this[this.tableBook_Issues.book_idColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'b_isbn\' in table \'Books\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'book_id\' in table \'Book_Issues\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableBooks.b_isbnColumn] = value;
+                    this[this.tableBook_Issues.book_idColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public string b_category {
+            public System.DateTime issue_date {
                 get {
                     try {
-                        return ((string)(this[this.tableBooks.b_categoryColumn]));
+                        return ((global::System.DateTime)(this[this.tableBook_Issues.issue_dateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'b_category\' in table \'Books\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'issue_date\' in table \'Book_Issues\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableBooks.b_categoryColumn] = value;
+                    this[this.tableBook_Issues.issue_dateColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public int b_qty {
+            public System.DateTime return_date {
                 get {
                     try {
-                        return ((int)(this[this.tableBooks.b_qtyColumn]));
+                        return ((global::System.DateTime)(this[this.tableBook_Issues.return_dateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'b_qty\' in table \'Books\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'return_date\' in table \'Book_Issues\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableBooks.b_qtyColumn] = value;
+                    this[this.tableBook_Issues.return_dateColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public bool Isb_titleNull() {
-                return this.IsNull(this.tableBooks.b_titleColumn);
+            public System.DateTime due_date {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableBook_Issues.due_dateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'due_date\' in table \'Book_Issues\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableBook_Issues.due_dateColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public void Setb_titleNull() {
-                this[this.tableBooks.b_titleColumn] = global::System.Convert.DBNull;
+            public bool Isstudent_idNull() {
+                return this.IsNull(this.tableBook_Issues.student_idColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public bool Isb_authorNull() {
-                return this.IsNull(this.tableBooks.b_authorColumn);
+            public void Setstudent_idNull() {
+                this[this.tableBook_Issues.student_idColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public void Setb_authorNull() {
-                this[this.tableBooks.b_authorColumn] = global::System.Convert.DBNull;
+            public bool Isbook_idNull() {
+                return this.IsNull(this.tableBook_Issues.book_idColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public bool Isb_isbnNull() {
-                return this.IsNull(this.tableBooks.b_isbnColumn);
+            public void Setbook_idNull() {
+                this[this.tableBook_Issues.book_idColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public void Setb_isbnNull() {
-                this[this.tableBooks.b_isbnColumn] = global::System.Convert.DBNull;
+            public bool Isissue_dateNull() {
+                return this.IsNull(this.tableBook_Issues.issue_dateColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public bool Isb_categoryNull() {
-                return this.IsNull(this.tableBooks.b_categoryColumn);
+            public void Setissue_dateNull() {
+                this[this.tableBook_Issues.issue_dateColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public void Setb_categoryNull() {
-                this[this.tableBooks.b_categoryColumn] = global::System.Convert.DBNull;
+            public bool Isreturn_dateNull() {
+                return this.IsNull(this.tableBook_Issues.return_dateColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public bool Isb_qtyNull() {
-                return this.IsNull(this.tableBooks.b_qtyColumn);
+            public void Setreturn_dateNull() {
+                this[this.tableBook_Issues.return_dateColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public void Setb_qtyNull() {
-                this[this.tableBooks.b_qtyColumn] = global::System.Convert.DBNull;
+            public bool Isdue_dateNull() {
+                return this.IsNull(this.tableBook_Issues.due_dateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
+            public void Setdue_dateNull() {
+                this[this.tableBook_Issues.due_dateColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -778,22 +774,22 @@ namespace LibraryManagementSysterm {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        public class BooksRowChangeEvent : global::System.EventArgs {
+        public class Book_IssuesRowChangeEvent : global::System.EventArgs {
             
-            private BooksRow eventRow;
+            private Book_IssuesRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public BooksRowChangeEvent(BooksRow row, global::System.Data.DataRowAction action) {
+            public Book_IssuesRowChangeEvent(Book_IssuesRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public BooksRow Row {
+            public Book_IssuesRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -809,7 +805,7 @@ namespace LibraryManagementSysterm {
         }
     }
 }
-namespace LibraryManagementSysterm.LibraryDataSetTableAdapters {
+namespace LibraryManagementSysterm.Data.LibraryDataSet8TableAdapters {
     
     
     /// <summary>
@@ -821,7 +817,7 @@ namespace LibraryManagementSysterm.LibraryDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class BooksTableAdapter : global::System.ComponentModel.Component {
+    public partial class Book_IssuesTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -835,7 +831,7 @@ namespace LibraryManagementSysterm.LibraryDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        public BooksTableAdapter() {
+        public Book_IssuesTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -932,63 +928,61 @@ namespace LibraryManagementSysterm.LibraryDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Books";
-            tableMapping.ColumnMappings.Add("b_id", "b_id");
-            tableMapping.ColumnMappings.Add("b_title", "b_title");
-            tableMapping.ColumnMappings.Add("b_author", "b_author");
-            tableMapping.ColumnMappings.Add("b_isbn", "b_isbn");
-            tableMapping.ColumnMappings.Add("b_category", "b_category");
-            tableMapping.ColumnMappings.Add("b_qty", "b_qty");
+            tableMapping.DataSetTable = "Book_Issues";
+            tableMapping.ColumnMappings.Add("issue_id", "issue_id");
+            tableMapping.ColumnMappings.Add("student_id", "student_id");
+            tableMapping.ColumnMappings.Add("book_id", "book_id");
+            tableMapping.ColumnMappings.Add("issue_date", "issue_date");
+            tableMapping.ColumnMappings.Add("return_date", "return_date");
+            tableMapping.ColumnMappings.Add("due_date", "due_date");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Books] WHERE (([b_id] = @Original_b_id) AND ((@IsNull_b_title = 1 AND [b_title] IS NULL) OR ([b_title] = @Original_b_title)) AND ((@IsNull_b_author = 1 AND [b_author] IS NULL) OR ([b_author] = @Original_b_author)) AND ((@IsNull_b_isbn = 1 AND [b_isbn] IS NULL) OR ([b_isbn] = @Original_b_isbn)) AND ((@IsNull_b_category = 1 AND [b_category] IS NULL) OR ([b_category] = @Original_b_category)) AND ((@IsNull_b_qty = 1 AND [b_qty] IS NULL) OR ([b_qty] = @Original_b_qty)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Book_Issues] WHERE (([issue_id] = @Original_issue_id) AND ((@IsNull_student_id = 1 AND [student_id] IS NULL) OR ([student_id] = @Original_student_id)) AND ((@IsNull_book_id = 1 AND [book_id] IS NULL) OR ([book_id] = @Original_book_id)) AND ((@IsNull_issue_date = 1 AND [issue_date] IS NULL) OR ([issue_date] = @Original_issue_date)) AND ((@IsNull_return_date = 1 AND [return_date] IS NULL) OR ([return_date] = @Original_return_date)) AND ((@IsNull_due_date = 1 AND [due_date] IS NULL) OR ([due_date] = @Original_due_date)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_b_title", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_title", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_title", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_title", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_b_author", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_author", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_author", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_author", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_b_isbn", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_isbn", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_isbn", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_isbn", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_b_category", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_category", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_category", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_category", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_b_qty", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_qty", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_qty", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_qty", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_issue_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "issue_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_student_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "student_id", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_student_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "student_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_book_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "book_id", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_book_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "book_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_issue_date", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "issue_date", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_issue_date", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "issue_date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_return_date", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "return_date", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_return_date", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "return_date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_due_date", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "due_date", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_due_date", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "due_date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Books] ([b_title], [b_author], [b_isbn], [b_category], [b_qty]" +
-                ") VALUES (@b_title, @b_author, @b_isbn, @b_category, @b_qty);\r\nSELECT b_id, b_ti" +
-                "tle, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id = SCOPE_IDENTITY" +
-                "())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Book_Issues] ([student_id], [book_id], [issue_date], [return_date], [due_date]) VALUES (@student_id, @book_id, @issue_date, @return_date, @due_date);
+SELECT issue_id, student_id, book_id, issue_date, return_date, due_date FROM Book_Issues WHERE (issue_id = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_title", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_title", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_author", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_author", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_isbn", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_isbn", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_category", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_category", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_qty", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_qty", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@student_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "student_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@book_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "book_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@issue_date", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "issue_date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@return_date", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "return_date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@due_date", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "due_date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Books] SET [b_title] = @b_title, [b_author] = @b_author, [b_isbn] = @b_isbn, [b_category] = @b_category, [b_qty] = @b_qty WHERE (([b_id] = @Original_b_id) AND ((@IsNull_b_title = 1 AND [b_title] IS NULL) OR ([b_title] = @Original_b_title)) AND ((@IsNull_b_author = 1 AND [b_author] IS NULL) OR ([b_author] = @Original_b_author)) AND ((@IsNull_b_isbn = 1 AND [b_isbn] IS NULL) OR ([b_isbn] = @Original_b_isbn)) AND ((@IsNull_b_category = 1 AND [b_category] IS NULL) OR ([b_category] = @Original_b_category)) AND ((@IsNull_b_qty = 1 AND [b_qty] IS NULL) OR ([b_qty] = @Original_b_qty)));
-SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id = @b_id)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Book_Issues] SET [student_id] = @student_id, [book_id] = @book_id, [issue_date] = @issue_date, [return_date] = @return_date, [due_date] = @due_date WHERE (([issue_id] = @Original_issue_id) AND ((@IsNull_student_id = 1 AND [student_id] IS NULL) OR ([student_id] = @Original_student_id)) AND ((@IsNull_book_id = 1 AND [book_id] IS NULL) OR ([book_id] = @Original_book_id)) AND ((@IsNull_issue_date = 1 AND [issue_date] IS NULL) OR ([issue_date] = @Original_issue_date)) AND ((@IsNull_return_date = 1 AND [return_date] IS NULL) OR ([return_date] = @Original_return_date)) AND ((@IsNull_due_date = 1 AND [due_date] IS NULL) OR ([due_date] = @Original_due_date)));
+SELECT issue_id, student_id, book_id, issue_date, return_date, due_date FROM Book_Issues WHERE (issue_id = @issue_id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_title", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_title", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_author", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_author", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_isbn", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_isbn", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_category", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_category", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_qty", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_qty", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_b_title", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_title", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_title", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_title", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_b_author", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_author", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_author", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_author", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_b_isbn", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_isbn", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_isbn", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_isbn", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_b_category", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_category", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_category", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_category", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_b_qty", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_qty", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_qty", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_qty", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "b_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@student_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "student_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@book_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "book_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@issue_date", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "issue_date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@return_date", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "return_date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@due_date", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "due_date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_issue_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "issue_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_student_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "student_id", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_student_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "student_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_book_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "book_id", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_book_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "book_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_issue_date", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "issue_date", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_issue_date", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "issue_date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_return_date", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "return_date", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_return_date", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "return_date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_due_date", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "due_date", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_due_date", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "due_date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@issue_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "issue_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1004,7 +998,8 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM dbo.Books";
+            this._commandCollection[0].CommandText = "SELECT issue_id, student_id, book_id, issue_date, return_date, due_date FROM dbo." +
+                "Book_Issues";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1012,7 +1007,7 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(LibraryDataSet.BooksDataTable dataTable) {
+        public virtual int Fill(LibraryDataSet8.Book_IssuesDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1025,9 +1020,9 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual LibraryDataSet.BooksDataTable GetData() {
+        public virtual LibraryDataSet8.Book_IssuesDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            LibraryDataSet.BooksDataTable dataTable = new LibraryDataSet.BooksDataTable();
+            LibraryDataSet8.Book_IssuesDataTable dataTable = new LibraryDataSet8.Book_IssuesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1035,15 +1030,15 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(LibraryDataSet.BooksDataTable dataTable) {
+        public virtual int Update(LibraryDataSet8.Book_IssuesDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(LibraryDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "Books");
+        public virtual int Update(LibraryDataSet8 dataSet) {
+            return this.Adapter.Update(dataSet, "Book_Issues");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1065,43 +1060,43 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_b_id, string Original_b_title, string Original_b_author, string Original_b_isbn, string Original_b_category, global::System.Nullable<int> Original_b_qty) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_b_id));
-            if ((Original_b_title == null)) {
+        public virtual int Delete(int Original_issue_id, global::System.Nullable<int> Original_student_id, global::System.Nullable<int> Original_book_id, global::System.Nullable<global::System.DateTime> Original_issue_date, global::System.Nullable<global::System.DateTime> Original_return_date, global::System.Nullable<global::System.DateTime> Original_due_date) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_issue_id));
+            if ((Original_student_id.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_student_id.Value));
+            }
+            else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_b_title));
+            if ((Original_book_id.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_book_id.Value));
             }
-            if ((Original_b_author == null)) {
+            else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_b_author));
+            if ((Original_issue_date.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((System.DateTime)(Original_issue_date.Value));
             }
-            if ((Original_b_isbn == null)) {
+            else {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_b_isbn));
+            if ((Original_return_date.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((System.DateTime)(Original_return_date.Value));
             }
-            if ((Original_b_category == null)) {
+            else {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_b_category));
-            }
-            if ((Original_b_qty.HasValue == true)) {
+            if ((Original_due_date.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((int)(Original_b_qty.Value));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((System.DateTime)(Original_due_date.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
@@ -1127,33 +1122,33 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string b_title, string b_author, string b_isbn, string b_category, global::System.Nullable<int> b_qty) {
-            if ((b_title == null)) {
+        public virtual int Insert(global::System.Nullable<int> student_id, global::System.Nullable<int> book_id, global::System.Nullable<global::System.DateTime> issue_date, global::System.Nullable<global::System.DateTime> return_date, global::System.Nullable<global::System.DateTime> due_date) {
+            if ((student_id.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((int)(student_id.Value));
+            }
+            else {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(b_title));
+            if ((book_id.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((int)(book_id.Value));
             }
-            if ((b_author == null)) {
+            else {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(b_author));
+            if ((issue_date.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(issue_date.Value));
             }
-            if ((b_isbn == null)) {
+            else {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(b_isbn));
+            if ((return_date.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((System.DateTime)(return_date.Value));
             }
-            if ((b_category == null)) {
+            else {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(b_category));
-            }
-            if ((b_qty.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(b_qty.Value));
+            if ((due_date.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(due_date.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
@@ -1178,79 +1173,79 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string b_title, string b_author, string b_isbn, string b_category, global::System.Nullable<int> b_qty, int Original_b_id, string Original_b_title, string Original_b_author, string Original_b_isbn, string Original_b_category, global::System.Nullable<int> Original_b_qty, int b_id) {
-            if ((b_title == null)) {
+        public virtual int Update(global::System.Nullable<int> student_id, global::System.Nullable<int> book_id, global::System.Nullable<global::System.DateTime> issue_date, global::System.Nullable<global::System.DateTime> return_date, global::System.Nullable<global::System.DateTime> due_date, int Original_issue_id, global::System.Nullable<int> Original_student_id, global::System.Nullable<int> Original_book_id, global::System.Nullable<global::System.DateTime> Original_issue_date, global::System.Nullable<global::System.DateTime> Original_return_date, global::System.Nullable<global::System.DateTime> Original_due_date, int issue_id) {
+            if ((student_id.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(student_id.Value));
+            }
+            else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(b_title));
+            if ((book_id.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(book_id.Value));
             }
-            if ((b_author == null)) {
+            else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(b_author));
+            if ((issue_date.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(issue_date.Value));
             }
-            if ((b_isbn == null)) {
+            else {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(b_isbn));
+            if ((return_date.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((System.DateTime)(return_date.Value));
             }
-            if ((b_category == null)) {
+            else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(b_category));
-            }
-            if ((b_qty.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(b_qty.Value));
+            if ((due_date.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(due_date.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_b_id));
-            if ((Original_b_title == null)) {
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_issue_id));
+            if ((Original_student_id.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_student_id.Value));
+            }
+            else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_b_title));
+            if ((Original_book_id.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_book_id.Value));
             }
-            if ((Original_b_author == null)) {
+            else {
                 this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_b_author));
+            if ((Original_issue_date.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((System.DateTime)(Original_issue_date.Value));
             }
-            if ((Original_b_isbn == null)) {
+            else {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_b_isbn));
+            if ((Original_return_date.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((System.DateTime)(Original_return_date.Value));
             }
-            if ((Original_b_category == null)) {
+            else {
                 this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_b_category));
-            }
-            if ((Original_b_qty.HasValue == true)) {
+            if ((Original_due_date.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Original_b_qty.Value));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((System.DateTime)(Original_due_date.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(b_id));
+            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(issue_id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1271,8 +1266,8 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string b_title, string b_author, string b_isbn, string b_category, global::System.Nullable<int> b_qty, int Original_b_id, string Original_b_title, string Original_b_author, string Original_b_isbn, string Original_b_category, global::System.Nullable<int> Original_b_qty) {
-            return this.Update(b_title, b_author, b_isbn, b_category, b_qty, Original_b_id, Original_b_title, Original_b_author, Original_b_isbn, Original_b_category, Original_b_qty, Original_b_id);
+        public virtual int Update(global::System.Nullable<int> student_id, global::System.Nullable<int> book_id, global::System.Nullable<global::System.DateTime> issue_date, global::System.Nullable<global::System.DateTime> return_date, global::System.Nullable<global::System.DateTime> due_date, int Original_issue_id, global::System.Nullable<int> Original_student_id, global::System.Nullable<int> Original_book_id, global::System.Nullable<global::System.DateTime> Original_issue_date, global::System.Nullable<global::System.DateTime> Original_return_date, global::System.Nullable<global::System.DateTime> Original_due_date) {
+            return this.Update(student_id, book_id, issue_date, return_date, due_date, Original_issue_id, Original_student_id, Original_book_id, Original_issue_date, Original_return_date, Original_due_date, Original_issue_id);
         }
     }
     
@@ -1288,7 +1283,7 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
         
         private UpdateOrderOption _updateOrder;
         
-        private BooksTableAdapter _booksTableAdapter;
+        private Book_IssuesTableAdapter _book_IssuesTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1310,12 +1305,12 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public BooksTableAdapter BooksTableAdapter {
+        public Book_IssuesTableAdapter Book_IssuesTableAdapter {
             get {
-                return this._booksTableAdapter;
+                return this._book_IssuesTableAdapter;
             }
             set {
-                this._booksTableAdapter = value;
+                this._book_IssuesTableAdapter = value;
             }
         }
         
@@ -1338,9 +1333,9 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._booksTableAdapter != null) 
-                            && (this._booksTableAdapter.Connection != null))) {
-                    return this._booksTableAdapter.Connection;
+                if (((this._book_IssuesTableAdapter != null) 
+                            && (this._book_IssuesTableAdapter.Connection != null))) {
+                    return this._book_IssuesTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1355,7 +1350,7 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._booksTableAdapter != null)) {
+                if ((this._book_IssuesTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1367,14 +1362,14 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        private int UpdateUpdatedRows(LibraryDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(LibraryDataSet8 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._booksTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Books.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._book_IssuesTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Book_Issues.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._booksTableAdapter.Update(updatedRows));
+                    result = (result + this._book_IssuesTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1386,13 +1381,13 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        private int UpdateInsertedRows(LibraryDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(LibraryDataSet8 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._booksTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Books.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._book_IssuesTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Book_Issues.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._booksTableAdapter.Update(addedRows));
+                    result = (result + this._book_IssuesTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1404,13 +1399,13 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        private int UpdateDeletedRows(LibraryDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(LibraryDataSet8 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._booksTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Books.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._book_IssuesTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Book_Issues.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._booksTableAdapter.Update(deletedRows));
+                    result = (result + this._book_IssuesTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1446,15 +1441,15 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        public virtual int UpdateAll(LibraryDataSet dataSet) {
+        public virtual int UpdateAll(LibraryDataSet8 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._booksTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._booksTableAdapter.Connection) == false))) {
+            if (((this._book_IssuesTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._book_IssuesTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1490,13 +1485,13 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._booksTableAdapter != null)) {
-                    revertConnections.Add(this._booksTableAdapter, this._booksTableAdapter.Connection);
-                    this._booksTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._booksTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._booksTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._booksTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._booksTableAdapter.Adapter);
+                if ((this._book_IssuesTableAdapter != null)) {
+                    revertConnections.Add(this._book_IssuesTableAdapter, this._book_IssuesTableAdapter.Connection);
+                    this._book_IssuesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._book_IssuesTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._book_IssuesTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._book_IssuesTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._book_IssuesTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1557,9 +1552,9 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._booksTableAdapter != null)) {
-                    this._booksTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._booksTableAdapter]));
-                    this._booksTableAdapter.Transaction = null;
+                if ((this._book_IssuesTableAdapter != null)) {
+                    this._book_IssuesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._book_IssuesTableAdapter]));
+                    this._book_IssuesTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

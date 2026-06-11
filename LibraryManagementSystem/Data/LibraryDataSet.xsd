@@ -89,42 +89,42 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="LibraryDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="LibraryDataSet" msprop:Generator_DataSetName="LibraryDataSet">
+  <xs:element name="LibraryDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="LibraryDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LibraryDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Books" msprop:Generator_RowEvHandlerName="BooksRowChangeEventHandler" msprop:Generator_RowDeletedName="BooksRowDeleted" msprop:Generator_RowDeletingName="BooksRowDeleting" msprop:Generator_RowEvArgName="BooksRowChangeEvent" msprop:Generator_TablePropName="Books" msprop:Generator_RowChangedName="BooksRowChanged" msprop:Generator_RowChangingName="BooksRowChanging" msprop:Generator_TableClassName="BooksDataTable" msprop:Generator_RowClassName="BooksRow" msprop:Generator_TableVarName="tableBooks" msprop:Generator_UserTableName="Books">
+        <xs:element name="Books" msprop:Generator_RowEvHandlerName="BooksRowChangeEventHandler" msprop:Generator_RowDeletedName="BooksRowDeleted" msprop:Generator_RowDeletingName="BooksRowDeleting" msprop:Generator_RowEvArgName="BooksRowChangeEvent" msprop:Generator_TablePropName="Books" msprop:Generator_RowChangedName="BooksRowChanged" msprop:Generator_UserTableName="Books" msprop:Generator_RowChangingName="BooksRowChanging" msprop:Generator_RowClassName="BooksRow" msprop:Generator_TableClassName="BooksDataTable" msprop:Generator_TableVarName="tableBooks">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="b_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="b_id" msprop:Generator_ColumnPropNameInTable="b_idColumn" msprop:Generator_ColumnVarNameInTable="columnb_id" msprop:Generator_UserColumnName="b_id" type="xs:int" />
-              <xs:element name="b_title" msprop:Generator_ColumnPropNameInRow="b_title" msprop:Generator_ColumnPropNameInTable="b_titleColumn" msprop:Generator_ColumnVarNameInTable="columnb_title" msprop:Generator_UserColumnName="b_title" minOccurs="0">
+              <xs:element name="b_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="b_idColumn" msprop:Generator_ColumnPropNameInRow="b_id" msprop:Generator_UserColumnName="b_id" msprop:Generator_ColumnVarNameInTable="columnb_id" type="xs:int" />
+              <xs:element name="b_title" msprop:Generator_ColumnPropNameInTable="b_titleColumn" msprop:Generator_ColumnPropNameInRow="b_title" msprop:Generator_UserColumnName="b_title" msprop:Generator_ColumnVarNameInTable="columnb_title" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="200" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="b_author" msprop:Generator_ColumnPropNameInRow="b_author" msprop:Generator_ColumnPropNameInTable="b_authorColumn" msprop:Generator_ColumnVarNameInTable="columnb_author" msprop:Generator_UserColumnName="b_author" minOccurs="0">
+              <xs:element name="b_author" msprop:Generator_ColumnPropNameInTable="b_authorColumn" msprop:Generator_ColumnPropNameInRow="b_author" msprop:Generator_UserColumnName="b_author" msprop:Generator_ColumnVarNameInTable="columnb_author" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="150" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="b_isbn" msprop:Generator_ColumnPropNameInRow="b_isbn" msprop:Generator_ColumnPropNameInTable="b_isbnColumn" msprop:Generator_ColumnVarNameInTable="columnb_isbn" msprop:Generator_UserColumnName="b_isbn" minOccurs="0">
+              <xs:element name="b_isbn" msprop:Generator_ColumnPropNameInTable="b_isbnColumn" msprop:Generator_ColumnPropNameInRow="b_isbn" msprop:Generator_UserColumnName="b_isbn" msprop:Generator_ColumnVarNameInTable="columnb_isbn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="b_category" msprop:Generator_ColumnPropNameInRow="b_category" msprop:Generator_ColumnPropNameInTable="b_categoryColumn" msprop:Generator_ColumnVarNameInTable="columnb_category" msprop:Generator_UserColumnName="b_category" minOccurs="0">
+              <xs:element name="b_category" msprop:Generator_ColumnPropNameInTable="b_categoryColumn" msprop:Generator_ColumnPropNameInRow="b_category" msprop:Generator_UserColumnName="b_category" msprop:Generator_ColumnVarNameInTable="columnb_category" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="b_qty" msprop:Generator_ColumnPropNameInRow="b_qty" msprop:Generator_ColumnPropNameInTable="b_qtyColumn" msprop:Generator_ColumnVarNameInTable="columnb_qty" msprop:Generator_UserColumnName="b_qty" type="xs:int" minOccurs="0" />
+              <xs:element name="b_qty" msprop:Generator_ColumnPropNameInTable="b_qtyColumn" msprop:Generator_ColumnPropNameInRow="b_qty" msprop:Generator_UserColumnName="b_qty" msprop:Generator_ColumnVarNameInTable="columnb_qty" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

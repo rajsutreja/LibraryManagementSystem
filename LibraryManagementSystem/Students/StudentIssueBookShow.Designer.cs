@@ -44,8 +44,8 @@
             this.return_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.due_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bookIssuesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.libraryDataSet8 = new LibraryManagementSysterm.LibraryDataSet8();
-            this.book_IssuesTableAdapter = new LibraryManagementSysterm.LibraryDataSet8TableAdapters.Book_IssuesTableAdapter();
+            this.libraryDataSet8 = new LibraryManagementSysterm.Data.LibraryDataSet8();
+            this.book_IssuesTableAdapter = new LibraryManagementSysterm.Data.LibraryDataSet8TableAdapters.Book_IssuesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookIssuesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryDataSet8)).BeginInit();
@@ -223,9 +223,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button previous;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private LibraryDataSet8 libraryDataSet8;
+        private Data.LibraryDataSet8 libraryDataSet8;
         private System.Windows.Forms.BindingSource bookIssuesBindingSource;
-        private LibraryDataSet8TableAdapters.Book_IssuesTableAdapter book_IssuesTableAdapter;
+        private Data.LibraryDataSet8TableAdapters.Book_IssuesTableAdapter book_IssuesTableAdapter;
         private System.Windows.Forms.DataGridViewButtonColumn Return;
         private System.Windows.Forms.DataGridViewTextBoxColumn issue_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn student_id;

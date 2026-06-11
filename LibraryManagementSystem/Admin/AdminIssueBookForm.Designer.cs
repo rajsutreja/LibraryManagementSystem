@@ -35,8 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.libraryDataSet4 = new LibraryManagementSysterm.LibraryDataSet4();
-            this.studentsTableAdapter = new LibraryManagementSysterm.LibraryDataSet4TableAdapters.StudentsTableAdapter();
+            this.libraryDataSet4 = new LibraryManagementSysterm.Data.LibraryDataSet4();
+            this.studentsTableAdapter = new LibraryManagementSysterm.Data.LibraryDataSet4TableAdapters.StudentsTableAdapter();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Adm_Add_Stud = new System.Windows.Forms.Button();
@@ -249,9 +249,9 @@
         private System.Windows.Forms.Button previous;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private LibraryDataSet4 libraryDataSet4;
+        private Data.LibraryDataSet4 libraryDataSet4;
         private System.Windows.Forms.BindingSource studentsBindingSource;
-        private LibraryDataSet4TableAdapters.StudentsTableAdapter studentsTableAdapter;
+        private Data.LibraryDataSet4TableAdapters.StudentsTableAdapter studentsTableAdapter;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Adm_Add_Stud;
