@@ -62,18 +62,18 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(334, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(902, 732);
+            this.panel1.Size = new System.Drawing.Size(803, 683);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lblOverview
             // 
             this.lblOverview.AutoSize = true;
-            this.lblOverview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOverview.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblOverview.ForeColor = System.Drawing.SystemColors.Highlight;
             this.lblOverview.Location = new System.Drawing.Point(29, 335);
             this.lblOverview.Name = "lblOverview";
-            this.lblOverview.Size = new System.Drawing.Size(113, 25);
+            this.lblOverview.Size = new System.Drawing.Size(95, 20);
             this.lblOverview.TabIndex = 13;
             this.lblOverview.Text = "lblOverview";
             // 
@@ -135,11 +135,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label2.Location = new System.Drawing.Point(5, 156);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(896, 29);
+            this.label2.Size = new System.Drawing.Size(745, 25);
             this.label2.TabIndex = 6;
             this.label2.Text = "Welcome to the LibroSphere Library Management System Admin Dashboard";
             // 
@@ -232,7 +232,7 @@
             this.close.FlatAppearance.BorderSize = 2;
             this.close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.close.Location = new System.Drawing.Point(1242, -1);
+            this.close.Location = new System.Drawing.Point(1107, -1);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(47, 31);
             this.close.TabIndex = 26;
@@ -255,7 +255,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 731);
+            this.ClientSize = new System.Drawing.Size(1149, 686);
             this.Controls.Add(this.close);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox1);

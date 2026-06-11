@@ -61,10 +61,10 @@
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 154);
+            this.richTextBox1.Location = new System.Drawing.Point(0, 84);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(1215, 479);
+            this.richTextBox1.Size = new System.Drawing.Size(1145, 515);
             this.richTextBox1.TabIndex = 9;
             this.richTextBox1.Text = "";
             // 
@@ -72,7 +72,7 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.textBox1.Location = new System.Drawing.Point(12, 671);
+            this.textBox1.Location = new System.Drawing.Point(12, 624);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(972, 50);
@@ -85,7 +85,7 @@
             this.Send_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Send_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Send_btn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Send_btn.Location = new System.Drawing.Point(1052, 671);
+            this.Send_btn.Location = new System.Drawing.Point(1009, 624);
             this.Send_btn.Name = "Send_btn";
             this.Send_btn.Size = new System.Drawing.Size(128, 50);
             this.Send_btn.TabIndex = 11;
@@ -97,7 +97,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1216, 741);
+            this.ClientSize = new System.Drawing.Size(1149, 686);
             this.Controls.Add(this.Send_btn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.richTextBox1);
