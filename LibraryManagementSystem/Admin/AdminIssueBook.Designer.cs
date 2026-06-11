@@ -367,7 +367,7 @@
             this.clear_recoard.ForeColor = System.Drawing.Color.White;
             this.clear_recoard.Location = new System.Drawing.Point(935, 273);
             this.clear_recoard.Name = "clear_recoard";
-            this.clear_recoard.Size = new System.Drawing.Size(153, 48);
+            this.clear_recoard.Size = new System.Drawing.Size(153, 56);
             this.clear_recoard.TabIndex = 40;
             this.clear_recoard.Text = "Delete Return Books Records";
             this.clear_recoard.UseVisualStyleBackColor = false;
@@ -445,7 +445,7 @@
             this.previous.UseVisualStyleBackColor = true;
             this.previous.Click += new System.EventHandler(this.previous_Click);
             // 
-            // _1AF
+            // AdminIssueBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -475,7 +475,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "_1AF";
+            this.Name = "AdminIssueBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Adm_pnl_issue_book";
             this.Load += new System.EventHandler(this.Adm_pnl_issue_book_Load);

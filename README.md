@@ -76,3 +76,4 @@ LibraryManagementSysterm/
 
 ## NOTE :
   -Set you Api_key and Connection_String in App.Config file 
+  -If run application and quality are low show then you go to bin/debug your .exe application properties and change High DPI setting
