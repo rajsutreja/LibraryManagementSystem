@@ -1,4 +1,4 @@
-﻿namespace LibraryManagementSysterm
+﻿namespace LibraryManagementSystem
 {
     partial class StudentLoginForm
     {
@@ -110,7 +110,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox2.Image = global::LibraryManagementSysterm.Properties.Resources.students_login;
+            this.pictureBox2.Image = global::LibraryManagementSystem.Properties.Resources.students_login;
             this.pictureBox2.Location = new System.Drawing.Point(453, 164);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(196, 173);
@@ -121,7 +121,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::LibraryManagementSysterm.Properties.Resources.pexels_pixabay_415071;
+            this.pictureBox1.Image = global::LibraryManagementSystem.Properties.Resources.pexels_pixabay_415071;
             this.pictureBox1.Location = new System.Drawing.Point(996, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(151, 120);
@@ -131,7 +131,7 @@
             // 
             // previous
             // 
-            this.previous.BackgroundImage = global::LibraryManagementSysterm.Properties.Resources.previous;
+            this.previous.BackgroundImage = global::LibraryManagementSystem.Properties.Resources.previous;
             this.previous.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.previous.Location = new System.Drawing.Point(3, 3);
             this.previous.Name = "previous";
@@ -142,7 +142,7 @@
             // 
             // button4
             // 
-            this.button4.BackgroundImage = global::LibraryManagementSysterm.Properties.Resources.password;
+            this.button4.BackgroundImage = global::LibraryManagementSystem.Properties.Resources.password;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.ForeColor = System.Drawing.SystemColors.ControlText;

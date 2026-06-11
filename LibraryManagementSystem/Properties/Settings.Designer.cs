@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LibraryManagementSysterm.Properties {
+namespace LibraryManagementSystem.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -35,3 +35,4 @@ namespace LibraryManagementSysterm.Properties {
         }
     }
 }
+

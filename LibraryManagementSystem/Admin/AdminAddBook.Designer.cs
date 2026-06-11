@@ -1,4 +1,4 @@
-﻿namespace LibraryManagementSysterm
+﻿namespace LibraryManagementSystem
 {
     partial class AdminAddBook
     {
@@ -60,7 +60,7 @@
             // 
             // previous
             // 
-            this.previous.BackgroundImage = global::LibraryManagementSysterm.Properties.Resources.previous;
+            this.previous.BackgroundImage = global::LibraryManagementSystem.Properties.Resources.previous;
             this.previous.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.previous.Location = new System.Drawing.Point(-2, -3);
             this.previous.Name = "previous";

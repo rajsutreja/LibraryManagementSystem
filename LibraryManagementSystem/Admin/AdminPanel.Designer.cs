@@ -1,4 +1,4 @@
-﻿namespace LibraryManagementSysterm
+﻿namespace LibraryManagementSystem
 {
     partial class AdminPanel
     {
@@ -243,7 +243,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::LibraryManagementSysterm.Properties.Resources.book;
+            this.pictureBox1.Image = global::LibraryManagementSystem.Properties.Resources.book;
             this.pictureBox1.Location = new System.Drawing.Point(-6, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(337, 149);

@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace LibraryManagementSysterm.Data {
+namespace LibraryManagementSystem.Data {
     
     
     /// <summary>
@@ -809,7 +809,7 @@ namespace LibraryManagementSysterm.Data {
         }
     }
 }
-namespace LibraryManagementSysterm.Data.LibraryDataSetTableAdapters {
+namespace LibraryManagementSystem.Data.LibraryDataSetTableAdapters {
     
     
     /// <summary>
@@ -995,7 +995,7 @@ SELECT b_id, b_title, b_author, b_isbn, b_category, b_qty FROM Books WHERE (b_id
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::LibraryManagementSysterm.Properties.Settings.Default.LibraryConnectionString;
+            this._connection.ConnectionString = global::LibraryManagementSystem.Properties.Settings.Default.LibraryConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

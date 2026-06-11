@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace LibraryManagementSysterm.Data {
+namespace LibraryManagementSystem.Data {
     
     
     /// <summary>
@@ -805,7 +805,7 @@ namespace LibraryManagementSysterm.Data {
         }
     }
 }
-namespace LibraryManagementSysterm.Data.LibraryDataSet8TableAdapters {
+namespace LibraryManagementSystem.Data.LibraryDataSet8TableAdapters {
     
     
     /// <summary>
@@ -989,7 +989,7 @@ SELECT issue_id, student_id, book_id, issue_date, return_date, due_date FROM Boo
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::LibraryManagementSysterm.Properties.Settings.Default.LibraryConnectionString;
+            this._connection.ConnectionString = global::LibraryManagementSystem.Properties.Settings.Default.LibraryConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

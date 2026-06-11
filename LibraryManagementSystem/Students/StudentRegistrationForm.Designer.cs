@@ -1,4 +1,4 @@
-﻿namespace LibraryManagementSysterm
+﻿namespace LibraryManagementSystem
 {
     partial class StudentRegistrationForm
     {
@@ -76,7 +76,7 @@
             // 
             // button5
             // 
-            this.button5.BackgroundImage = global::LibraryManagementSysterm.Properties.Resources.password;
+            this.button5.BackgroundImage = global::LibraryManagementSystem.Properties.Resources.password;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -89,7 +89,7 @@
             // 
             // button4
             // 
-            this.button4.BackgroundImage = global::LibraryManagementSysterm.Properties.Resources.password;
+            this.button4.BackgroundImage = global::LibraryManagementSystem.Properties.Resources.password;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -243,7 +243,7 @@
             // 
             // previous
             // 
-            this.previous.BackgroundImage = global::LibraryManagementSysterm.Properties.Resources.previous;
+            this.previous.BackgroundImage = global::LibraryManagementSystem.Properties.Resources.previous;
             this.previous.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.previous.Location = new System.Drawing.Point(1, 0);
             this.previous.Name = "previous";
@@ -254,7 +254,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::LibraryManagementSysterm.Properties.Resources.student_registration;
+            this.pictureBox1.Image = global::LibraryManagementSystem.Properties.Resources.student_registration;
             this.pictureBox1.Location = new System.Drawing.Point(446, 37);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 144);

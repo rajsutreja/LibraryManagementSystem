@@ -1,4 +1,4 @@
-﻿namespace LibraryManagementSysterm
+﻿namespace LibraryManagementSystem
 {
     partial class SplashFrom
     {
@@ -127,4 +127,5 @@
         private System.Windows.Forms.Label label3;
     }
 }
+
 

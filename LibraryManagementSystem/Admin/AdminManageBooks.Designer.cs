@@ -1,4 +1,4 @@
-﻿namespace LibraryManagementSysterm
+﻿namespace LibraryManagementSystem
 {
     partial class AdminManageBooks
     {
@@ -43,8 +43,8 @@
             this.b_category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.b_qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.booksBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.libraryDataSet = new LibraryManagementSysterm.Data.LibraryDataSet();
-            this.booksTableAdapter = new LibraryManagementSysterm.Data.LibraryDataSetTableAdapters.BooksTableAdapter();
+            this.libraryDataSet = new LibraryManagementSystem.Data.LibraryDataSet();
+            this.booksTableAdapter = new LibraryManagementSystem.Data.LibraryDataSetTableAdapters.BooksTableAdapter();
             this.previous = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -201,7 +201,7 @@
             // 
             // previous
             // 
-            this.previous.BackgroundImage = global::LibraryManagementSysterm.Properties.Resources.previous;
+            this.previous.BackgroundImage = global::LibraryManagementSystem.Properties.Resources.previous;
             this.previous.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.previous.Location = new System.Drawing.Point(-1, -3);
             this.previous.Name = "previous";

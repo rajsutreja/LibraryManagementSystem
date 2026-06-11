@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace LibraryManagementSysterm.Data {
+namespace LibraryManagementSystem.Data {
     
     
     /// <summary>
@@ -728,7 +728,7 @@ namespace LibraryManagementSysterm.Data {
         }
     }
 }
-namespace LibraryManagementSysterm.Data.LibraryDataSet4TableAdapters {
+namespace LibraryManagementSystem.Data.LibraryDataSet4TableAdapters {
     
     
     /// <summary>
@@ -905,7 +905,7 @@ SELECT S_ID, S_Username, S_Email, S_Mobile, S_Age, S_Password FROM Students WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::LibraryManagementSysterm.Properties.Settings.Default.LibraryConnectionString;
+            this._connection.ConnectionString = global::LibraryManagementSystem.Properties.Settings.Default.LibraryConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

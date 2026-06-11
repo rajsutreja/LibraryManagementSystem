@@ -1,4 +1,4 @@
-﻿namespace LibraryManagementSysterm
+﻿namespace LibraryManagementSystem
 {
     partial class StudentBookSectionForm
     {
@@ -35,12 +35,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.booksBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.libraryDataSet = new LibraryManagementSysterm.Data.LibraryDataSet();
-            this.booksTableAdapter = new LibraryManagementSysterm.Data.LibraryDataSetTableAdapters.BooksTableAdapter();
+            this.libraryDataSet = new LibraryManagementSystem.Data.LibraryDataSet();
+            this.booksTableAdapter = new LibraryManagementSystem.Data.LibraryDataSetTableAdapters.BooksTableAdapter();
             this.label7 = new System.Windows.Forms.Label();
             this.cmb = new System.Windows.Forms.ComboBox();
             this.previous = new System.Windows.Forms.Button();
-            this.libraryDataSet8 = new LibraryManagementSysterm.Data.LibraryDataSet8();
+            this.libraryDataSet8 = new LibraryManagementSystem.Data.LibraryDataSet8();
             this.libraryDataSet8BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bqtyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bcategoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -131,7 +131,7 @@
             // 
             // previous
             // 
-            this.previous.BackgroundImage = global::LibraryManagementSysterm.Properties.Resources.previous;
+            this.previous.BackgroundImage = global::LibraryManagementSystem.Properties.Resources.previous;
             this.previous.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.previous.Location = new System.Drawing.Point(0, 0);
             this.previous.Name = "previous";

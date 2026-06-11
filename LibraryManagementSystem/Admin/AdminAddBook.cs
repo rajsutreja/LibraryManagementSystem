@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
-namespace LibraryManagementSysterm
+namespace LibraryManagementSystem
 {
     public partial class AdminAddBook : Form
     {
@@ -88,3 +88,4 @@ namespace LibraryManagementSysterm
         }
     }
 }
+

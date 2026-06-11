@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LibraryManagementSysterm
+namespace LibraryManagementSystem
 {
     public partial class StudentLoginForm : Form
     {
@@ -63,3 +63,4 @@ namespace LibraryManagementSysterm
     }
     }
 }
+

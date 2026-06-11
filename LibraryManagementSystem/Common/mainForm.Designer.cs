@@ -1,4 +1,4 @@
-﻿namespace LibraryManagementSysterm
+﻿namespace LibraryManagementSystem
 {
     partial class mainForm
     {
@@ -125,7 +125,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::LibraryManagementSysterm.Properties.Resources.Lakshya;
+            this.pictureBox2.Image = global::LibraryManagementSystem.Properties.Resources.Lakshya;
             this.pictureBox2.Location = new System.Drawing.Point(385, 177);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(291, 233);

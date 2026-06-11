@@ -1,4 +1,4 @@
-﻿namespace LibraryManagementSysterm
+﻿namespace LibraryManagementSystem
 {
     partial class StudentIssueBookShow
     {
@@ -44,8 +44,8 @@
             this.return_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.due_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bookIssuesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.libraryDataSet8 = new LibraryManagementSysterm.Data.LibraryDataSet8();
-            this.book_IssuesTableAdapter = new LibraryManagementSysterm.Data.LibraryDataSet8TableAdapters.Book_IssuesTableAdapter();
+            this.libraryDataSet8 = new LibraryManagementSystem.Data.LibraryDataSet8();
+            this.book_IssuesTableAdapter = new LibraryManagementSystem.Data.LibraryDataSet8TableAdapters.Book_IssuesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookIssuesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryDataSet8)).BeginInit();
@@ -64,7 +64,7 @@
             // 
             // previous
             // 
-            this.previous.BackgroundImage = global::LibraryManagementSysterm.Properties.Resources.previous;
+            this.previous.BackgroundImage = global::LibraryManagementSystem.Properties.Resources.previous;
             this.previous.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.previous.Location = new System.Drawing.Point(-2, 0);
             this.previous.Name = "previous";

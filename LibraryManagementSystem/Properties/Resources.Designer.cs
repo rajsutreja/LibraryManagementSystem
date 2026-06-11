@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LibraryManagementSysterm.Properties {
+namespace LibraryManagementSystem.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace LibraryManagementSysterm.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LibraryManagementSysterm.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LibraryManagementSystem.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -251,3 +251,4 @@ namespace LibraryManagementSysterm.Properties {
         }
     }
 }
+

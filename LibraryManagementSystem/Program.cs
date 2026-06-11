@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LibraryManagementSysterm
+namespace LibraryManagementSystem
 {
     
     internal static class Program
@@ -21,3 +21,4 @@ namespace LibraryManagementSysterm
         }
     }
 }
+

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LibraryManagementSysterm
+namespace LibraryManagementSystem
 {
     public partial class chatbot : Form
     {
@@ -583,3 +583,4 @@ namespace LibraryManagementSysterm
     }
 
 }
+

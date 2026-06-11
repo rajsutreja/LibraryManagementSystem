@@ -1,4 +1,4 @@
-﻿namespace LibraryManagementSysterm
+﻿namespace LibraryManagementSystem
 {
     partial class StudentPanel
     {
@@ -149,7 +149,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::LibraryManagementSysterm.Properties.Resources.book;
+            this.pictureBox1.Image = global::LibraryManagementSystem.Properties.Resources.book;
             this.pictureBox1.Location = new System.Drawing.Point(13, 13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 98);

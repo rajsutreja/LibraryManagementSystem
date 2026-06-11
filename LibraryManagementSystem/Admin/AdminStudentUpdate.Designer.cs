@@ -1,4 +1,4 @@
-﻿namespace LibraryManagementSysterm
+﻿namespace LibraryManagementSystem
 {
     partial class AdminStudentUpdate
     {
@@ -211,7 +211,7 @@
             // 
             // previous
             // 
-            this.previous.BackgroundImage = global::LibraryManagementSysterm.Properties.Resources.previous;
+            this.previous.BackgroundImage = global::LibraryManagementSystem.Properties.Resources.previous;
             this.previous.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.previous.Location = new System.Drawing.Point(-1, 0);
             this.previous.Name = "previous";
@@ -222,7 +222,7 @@
             // 
             // button4
             // 
-            this.button4.BackgroundImage = global::LibraryManagementSysterm.Properties.Resources.password;
+            this.button4.BackgroundImage = global::LibraryManagementSystem.Properties.Resources.password;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.ForeColor = System.Drawing.SystemColors.ControlText;

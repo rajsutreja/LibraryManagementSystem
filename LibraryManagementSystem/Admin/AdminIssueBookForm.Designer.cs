@@ -1,4 +1,4 @@
-﻿namespace LibraryManagementSysterm
+﻿namespace LibraryManagementSystem
 {
     partial class AdminIssueBookForm
     {
@@ -35,8 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.libraryDataSet4 = new LibraryManagementSysterm.Data.LibraryDataSet4();
-            this.studentsTableAdapter = new LibraryManagementSysterm.Data.LibraryDataSet4TableAdapters.StudentsTableAdapter();
+            this.libraryDataSet4 = new LibraryManagementSystem.Data.LibraryDataSet4();
+            this.studentsTableAdapter = new LibraryManagementSystem.Data.LibraryDataSet4TableAdapters.StudentsTableAdapter();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Adm_Add_Stud = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@
             // 
             // previous
             // 
-            this.previous.BackgroundImage = global::LibraryManagementSysterm.Properties.Resources.previous;
+            this.previous.BackgroundImage = global::LibraryManagementSystem.Properties.Resources.previous;
             this.previous.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.previous.Location = new System.Drawing.Point(0, 0);
             this.previous.Name = "previous";

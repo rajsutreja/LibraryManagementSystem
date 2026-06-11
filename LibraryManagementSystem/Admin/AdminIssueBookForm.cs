@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
-namespace LibraryManagementSysterm
+namespace LibraryManagementSystem
 {
     public partial class AdminIssueBookForm : Form
     {
@@ -119,3 +119,4 @@ namespace LibraryManagementSysterm
         }
     }
 }
+
