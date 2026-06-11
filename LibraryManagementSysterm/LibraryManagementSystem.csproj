@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C013DC7C-FE91-4EE1-851C-B3B1B5D4E5B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LibraryManagementSysterm</RootNamespace>
+    <AssemblyName>LibraryManagementSysterm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminIssueBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminIssueBook.Designer.cs">
+      <DependentUpon>AdminIssueBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chatbot\aiservies.cs" />
+    <Compile Include="Chatbot\chatbot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chatbot\chatbot.Designer.cs">
+      <DependentUpon>chatbot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students\StudentBookSectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students\StudentBookSectionForm.Designer.cs">
+      <DependentUpon>StudentBookSectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students\StudentIssueBookShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students\StudentIssueBookShow.Designer.cs">
+      <DependentUpon>StudentIssueBookShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students\AccountDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students\AccountDetails.Designer.cs">
+      <DependentUpon>AccountDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminLoginForm.Designer.cs">
+      <DependentUpon>AdminLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminAddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminAddBook.Designer.cs">
+      <DependentUpon>AdminAddBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminStudentAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminStudentAdd.Designer.cs">
+      <DependentUpon>AdminStudentAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminStudentUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminStudentUpdate.Designer.cs">
+      <DependentUpon>AdminStudentUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminUpdateBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminUpdateBook.Designer.cs">
+      <DependentUpon>AdminUpdateBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminManageBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminManageBooks.Designer.cs">
+      <DependentUpon>AdminManageBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminIssueBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminIssueBookForm.Designer.cs">
+      <DependentUpon>AdminIssueBookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\LibraryDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminBookShelveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminBookShelveForm.Designer.cs">
+      <DependentUpon>AdminBookShelveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DATABASE.cs" />
+    <Compile Include="Students\EditAccountdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students\EditAccountdetails.Designer.cs">
+      <DependentUpon>EditAccountdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\LibraryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\LibraryDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Students\StudentLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students\StudentLoginForm.Designer.cs">
+      <DependentUpon>StudentLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students\StudentPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students\StudentPanel.Designer.cs">
+      <DependentUpon>StudentPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students\StudentRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students\StudentRegistrationForm.Designer.cs">
+      <DependentUpon>StudentRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SplashFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\SplashFrom.Designer.cs">
+      <DependentUpon>SplashFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\AdminIssueBook.resx">
+      <DependentUpon>AdminIssueBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chatbot\chatbot.resx">
+      <DependentUpon>chatbot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\StudentBookSectionForm.resx">
+      <DependentUpon>StudentBookSectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\StudentIssueBookShow.resx">
+      <DependentUpon>StudentIssueBookShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\AccountDetails.resx">
+      <DependentUpon>AccountDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminLoginForm.resx">
+      <DependentUpon>AdminLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminAddBook.resx">
+      <DependentUpon>AdminAddBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminStudentAdd.resx">
+      <DependentUpon>AdminStudentAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminStudentUpdate.resx">
+      <DependentUpon>AdminStudentUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminUpdateBook.resx">
+      <DependentUpon>AdminUpdateBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminManageBooks.resx">
+      <DependentUpon>AdminManageBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminIssueBookForm.resx">
+      <DependentUpon>AdminIssueBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminBookShelveForm.resx">
+      <DependentUpon>AdminBookShelveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\EditAccountdetails.resx">
+      <DependentUpon>EditAccountdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\SplashFrom.resx">
+      <DependentUpon>SplashFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Students\StudentLoginForm.resx">
+      <DependentUpon>StudentLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\StudentPanel.resx">
+      <DependentUpon>StudentPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\StudentRegistrationForm.resx">
+      <DependentUpon>StudentRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Data\LibraryDataSet.xsc">
+      <DependentUpon>LibraryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Data\LibraryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibraryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\LibraryDataSet.xss">
+      <DependentUpon>LibraryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Data\LibraryDataSet4.xsc">
+      <DependentUpon>LibraryDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Data\LibraryDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibraryDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\LibraryDataSet4.xss">
+      <DependentUpon>LibraryDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Data\LibraryDataSet8.xsc">
+      <DependentUpon>LibraryDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Data\LibraryDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibraryDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\LibraryDataSet8.xss">
+      <DependentUpon>LibraryDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emil-widlund-xrbbXIXAWY0-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emil-widlund-xrbbXIXAWY0-unsplash1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trnava-university-BEEyeib-am8-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximize.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maxi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student-registration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-dbaler-19723290.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-beyzaa-yurtkuran-279977530-19208445.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-pixabay-415071.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\students_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lakshya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AI-Chatbot-Development.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatBot.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
