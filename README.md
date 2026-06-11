@@ -1,79 +1,117 @@
-# LibraryManagementSystem
+# Library Management System
+
+A feature-rich Library Management System developed using **C#, Windows Forms, ADO.NET, and SQL Server**. This application helps libraries efficiently manage books, students, book transactions, fines, and user accounts through an intuitive desktop interface.
 
 ## Overview
-A Windows Forms application developed using C# and SQL Server for managing library operations.
+
+The Library Management System is designed to automate and simplify library operations. It provides separate roles for administrators and students, allowing efficient management of books, borrowing activities, and library records. The system also includes an AI-powered chatbot to assist users with library-related queries.
 
 ## Features
-Admin :
-  - Add Books/Students
-  - Update Books/Students
-  - Delete Books/Students
-  - Search Books/Students
-  - Edit Books/Students Details
-  - Issue Books
-  - Return Books
 
-Students:
-  - Singin/Login
-  - Issue Books
-  - Return Books
-  - Edit Your Details
+### Authentication & Security
 
+- User Registration
+- Secure Login System
+- Password Recovery
+- Role-Based Access Control (Admin & Student)
 
-## AI Chatbot for Students :
+### Book Management
 
-  AI Chatbot for Students is an intelligent desktop to create for students help to manage your book shelve.
-  
-  The goal of this project is to help students learn more effectively by providing quick access to information, explanations, and academic       assistance.
-  
-  Features
-  Student-friendly conversational interface
-  Answers academic questions instantly
-  Student can Issue Book, Return Book and category wise suggested Books
-  Simple and interactive user experience
-  Real-time response generation
-  Easy-to-use interface 
-      
+- Add New Books
+- Update Book Details
+- Delete Books
+- Search Books
+- View Available Books
+
+### Student Management
+
+- Add Student Records
+- Update Student Information
+- Delete Student Records
+- Search Students
+
+### Book Issue & Return
+
+- Issue Books to Students
+- Return Issued Books
+- Track Borrowing History
+- Monitor Book Availability
+
+### Fine Management
+
+- Automatic Fine Calculation for Late Returns
+- Fine Tracking and Management
+
+### AI Student Assistant
+
+- Ai-Powered Chatbot Integration
+- Assists Students with Library Queries
+- Provides Quick Guidance and Support
+
+### Database Management
+
+- SQL Server Database Integration
+- Efficient Data Storage and Retrieval using ADO.NET
+
 ## Technologies Used
+
 - C#
-- Windows Forms
+- Windows Forms (.NET Framework)
 - SQL Server
 - ADO.NET
+- Git & GitHub
+
+## System Architecture
+
+User Interface (Windows Forms)
+        ↓
+Business Logic Layer
+        ↓
+ADO.NET
+        ↓
+SQL Server Database
+
+## Installation
+
+### Prerequisites
+
 - Visual Studio
+- SQL Server
+- .NET Framework
 
-## Project Structure
+### Steps
 
+1. Clone the repository:
 
-LibraryManagementSysterm/
-```
-├── Program.cs              # Application entry point
-├── Admin/                  # Admin forms (books, students, issue/return)
-├── Students/               # Student forms (login, registration, books)
-├── Common/                 # Shared forms (splash, main menu, help)
-├── Chatbot/                # AI chatbot for students
-├── Data/                   # Database access and typed datasets
-├── Properties/             # App settings and resources
-└── Resources/                # Images and assets
-```
+   git clone https://github.com/rajsutreja/LibraryManagementSystem.git
 
-## How to Run
-1. Clone repository
-2. Open solution in Visual Studio
-3. Configure database connection
-4. Run project
+2. Open the solution in Visual Studio.
 
-## Future Enhancements
-- Fine Calculation
-- Role-Based Authentication
+3. Configure the database connection string and api in App.config.
 
-## Database
-1. Open SSMS.
-2. Connect to SQL Server.
-3. Open Database/Library.sql.
-4. Press F5 (Execute).
-5. Database and tables are created automatically.
-6. Run your C# application.
+4. Execute the provided SQL script to create the database.
 
-## NOTE :
-  -Set you Api_key and Connection_String in App.Config file 
-  -If run application and quality are low show then you go to bin/debug your .exe application properties and change High DPI setting
+5. Build and run the application.
+
+## Screenshots
+
+Add screenshots for:
+
+- Login Page
+- Dashboard
+- Book Management
+- Student Management
+- Issue Book
+- Return Book
+- Fine Management
+- AI Chatbot
+
+## Project Highlights
+
+- Real-world desktop application
+- Role-based user management
+- Database-driven architecture
+- Fine calculation system
+- AI chatbot integration
+- Clean and user-friendly interface
+
